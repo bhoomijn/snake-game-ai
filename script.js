@@ -84,6 +84,10 @@ function gameLoop() {
   drawSnake();
 }
 
-// 👇 ye line snake ko start me visible banati hai
-drawSnake(); // snake visible at start
-setInterval(gameLoop, 100);
+// 👇 snake visible at start
+drawSnake();
+
+// 👇 thoda delay ke baad loop start hoga
+setTimeout(() => {
+  setInterval(gameLoop, 100);
+}, 200);
