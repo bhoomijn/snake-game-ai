@@ -1,0 +1,24 @@
+=== Prompts Used During Hackathon ===
+
+[11 July, 3:30 PM IST]
+- "Start Snake Game in HTML + JavaScript."
+
+[11 July, 4:00 PM IST]
+- "Add food and scoring system."
+
+[11 July, 5:00 PM IST]
+- "Show Game Over message when snake hits wall or itself."
+
+[11 July, 6:00 PM IST]
+- "Add Restart button and High Score tracking."
+
+[11 July, 7:30 PM IST]
+- "Make README professional for hackathon submission."
+
+[11 July, 8:30 PM IST]
+- "Explain how to prepare AI traces ZIP file."
+
+[11 July, 9:00 PM IST]
+- "Write professional content for copilot_chats.txt and build_logs.txt."
+
+=== End of Prompts List ===
