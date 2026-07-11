@@ -1,0 +1,9 @@
+=== Tools & Platforms Used ===
+
+- Microsoft Copilot: Code generation, debugging, and polishing.
+- GitHub: Repository hosting and version control.
+- GitHub Pages: Deployment of browser-playable game.
+- Visual Studio Code: Local coding environment.
+- Canva (optional): For design ideas and presentation assets.
+
+=== End of Tools List ===
