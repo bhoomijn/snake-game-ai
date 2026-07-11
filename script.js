@@ -87,7 +87,7 @@ function gameLoop() {
 // 👇 snake visible at start
 drawSnake();
 
-// 👇 thoda delay ke baad loop start hoga
+// 👇 loop start hone se pehle thoda delay do
 setTimeout(() => {
   setInterval(gameLoop, 100);
-}, 200);
+}, 300);
