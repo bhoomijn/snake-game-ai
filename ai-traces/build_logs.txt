@@ -9,19 +9,19 @@
 - Debugged food placement issue.
 - Identified Copilot’s mistake in random coordinate calculation and corrected manually.
 
-[11 July, 5:00 PM IST]
+[11 July, 4:18 PM IST]
 - Implemented scoring system and tested increment logic.
 - Asked Copilot for restart function; refined code to avoid duplicate event listeners.
 
-[11 July, 6:30 PM IST]
+[11 July, 4:20 PM IST]
 - Added Game Over message display.
 - Verified snake self‑collision detection; Copilot suggestion adjusted for reliability.
 
-[11 July, 7:15 PM IST]
+[11 July, 4:21 PM IST]
 - Integrated High Score tracking using localStorage.
 - Tested persistence across multiple sessions.
 
-[11 July, 8:00 PM IST]
+[11 July, 4:24 PM IST]
 - Prepared README draft with professional sections.
 - Ensured credits and disclosures included.
 
