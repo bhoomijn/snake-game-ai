@@ -1,35 +1,31 @@
+# Snake Game AI
 
-# Snake Game AI – Parsewave Game Jam 2026
+## 🎮 How to Play
+- Use **Arrow Keys** (↑ ↓ ← →) to move the snake.
+- Eat the red food blocks to increase your score.
+- Avoid hitting the walls or your own body — otherwise **Game Over**.
+- Press the **Restart button** to start a new game.
 
-## 🎮 Project Overview
-This is a classic Snake game built in 24 hours for the Parsewave Game Jam 2026.  
-The game runs directly in the browser using HTML, CSS, and JavaScript.  
+## 🛠️ Built During Hackathon
+- Implemented **score counter** and **restart button**.
+- Added **Game Over message** when snake collides.
+- Integrated **High Score tracking** using localStorage.
+- Polished UI with clean layout and responsive canvas.
 
-## 🚀 Features
-- Smooth snake movement with arrow keys
-- Randomly generated food blocks
-- Growing snake length on eating food
-- Game over detection (walls & self-collision)
-- Simple, clean UI for quick play
+## 🤖 AI Tools Used
+- **Microsoft Copilot** for code generation, debugging, and polishing.
+- AI assistance for creating game logic, README structure, and feature ideas.
 
-## 🧠 AI Integration
-- Used AI tools for guidance, debugging, and rapid prototyping
-- AI-assisted code generation for core game loop
-- AI-generated assets and prompts included in submission traces
-
-## 🕹️ How to Play
-- Press **Arrow Keys** to move the snake
-- Eat red food blocks to grow
-- Avoid hitting walls or yourself
-- Survive as long as possible to maximize score
-
-## 📦 Hackathon Deliverables
-- **Playable Game**: Deployed via GitHub Pages
-- **Source Code**: Public GitHub repository
-- **AI Trace Zip**: Includes prompts, logs, and outputs
-- **README.md**: Documentation of project and AI usage
+## 📂 Submission Package
+- **Deployed Game URL**: [https://bhoomijn.github.io/snake-game-ai](https://bhoomijn.github.io/snake-game-ai)
+- **Public Repository**: [GitHub Repo Link](https://github.com/bhoomijn/snake-game-ai)
+- **AI Agent Traces**: Included in ZIP file (Copilot chats, prompts, logs).
 
 ## 📜 Credits & Disclosures
-- Starter logic inspired by open-source tutorials
-- Assets and improvements generated using AI tools
-- Built and submitted by [Your Name/GitHub Username]
+- Starter inspiration from basic JavaScript canvas tutorials.
+- All assets and code customized during the 24‑hour hackathon window.
+- No external paid assets used.
+
+## 🌍 Browser Requirements
+- Works on Chrome, Edge, Firefox, Safari.
+- Supports both desktop (keyboard) and mobile (touch with on‑screen buttons planned).
