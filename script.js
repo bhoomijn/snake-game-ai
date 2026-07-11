@@ -1,7 +1,7 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-let snake = [{x: 190, y: 190}]; // center spawn
+let snake = [{x: 200, y: 200}]; // center spawn
 let dx = 10;
 let dy = 0;
 let food = {x: 100, y: 100};
@@ -65,7 +65,7 @@ function checkGameOver() {
 
 function restartGame() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  snake = [{x: 190, y: 190}];
+  snake = [{x: 200, y: 200}];
   dx = 10; dy = 0;
   score = 0;
   document.getElementById("score").innerText = "Score: 0";
@@ -84,5 +84,5 @@ function gameLoop() {
   drawSnake();
 }
 
-drawSnake(); // visible at start
+drawSnake(); // snake visible at start
 setInterval(gameLoop, 100);
