@@ -85,5 +85,5 @@ function gameLoop() {
   drawSnake();
 }
 
-drawSnake(); // ensure snake visible at start
+drawSnake(); // snake visible at start
 setInterval(gameLoop, 100);
