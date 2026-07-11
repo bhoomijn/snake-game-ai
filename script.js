@@ -1,7 +1,7 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-let snake = [{x: 200, y: 200}];
+let snake = [{x: 190, y: 190}]; // center spawn
 let dx = 10;
 let dy = 0;
 let food = {x: 100, y: 100};
@@ -64,19 +64,18 @@ function checkGameOver() {
 }
 
 function restartGame() {
-  snake = [{x: 200, y: 200}];
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  snake = [{x: 190, y: 190}];
   dx = 10; dy = 0;
   score = 0;
   document.getElementById("score").innerText = "Score: 0";
   food = {x: 100, y: 100};
+  drawSnake(); // ensure visible after restart
 }
 
 function gameLoop() {
   if (checkGameOver()) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "red";
-    ctx.font = "24px Arial";
-    ctx.fillText("Game Over!", 140, 200);
+    restartGame(); // auto restart instead of stopping
     return;
   }
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -85,5 +84,5 @@ function gameLoop() {
   drawSnake();
 }
 
-drawSnake(); // snake visible at start
+drawSnake(); // visible at start
 setInterval(gameLoop, 100);
