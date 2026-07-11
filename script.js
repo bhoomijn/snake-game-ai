@@ -86,6 +86,4 @@ function gameLoop() {
 
 // 👇 ye line snake ko start me visible banati hai
 drawSnake(); // snake visible at start
-
 setInterval(gameLoop, 100);
-
