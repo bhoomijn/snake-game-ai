@@ -6,6 +6,7 @@ let dx = 10;
 let dy = 0;
 let food = {x: 100, y: 100};
 let score = 0;
+let highScore = 0;
 
 document.addEventListener("keydown", changeDirectionKey);
 
@@ -39,6 +40,11 @@ function moveSnake() {
 
   if (head.x === food.x && head.y === food.y) {
     score++;
+    document.getElementById("score").innerText = "Score: " + score;
+    if (score > highScore) {
+      highScore = score;
+      document.getElementById("highScore").innerText = "High Score: " + highScore;
+    }
     food = {
       x: Math.floor(Math.random() * 40) * 10,
       y: Math.floor(Math.random() * 40) * 10
@@ -57,10 +63,20 @@ function checkGameOver() {
   return false;
 }
 
+function restartGame() {
+  snake = [{x: 200, y: 200}];
+  dx = 10; dy = 0;
+  score = 0;
+  document.getElementById("score").innerText = "Score: 0";
+  food = {x: 100, y: 100};
+}
+
 function gameLoop() {
   if (checkGameOver()) {
-    alert("Game Over! Score: " + score);
-    document.location.reload();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "red";
+    ctx.font = "24px Arial";
+    ctx.fillText("Game Over!", 140, 200);
     return;
   }
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -69,4 +85,5 @@ function gameLoop() {
   drawSnake();
 }
 
+drawSnake(); // ensure snake visible at start
 setInterval(gameLoop, 100);
