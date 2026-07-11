@@ -1,7 +1,7 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-let snake = [{x: 200, y: 200}]; // center spawn
+let snake = [{x: 200, y: 200}]; // snake start center
 let dx = 10;
 let dy = 0;
 let food = {x: 100, y: 100};
